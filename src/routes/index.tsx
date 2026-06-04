@@ -85,7 +85,7 @@ function Index() {
   if (!booted) {
     return (
       <>
-        <Particles />
+        {/* <Particles /> */}
         <BootScreen onDone={() => setBooted(true)} />
       </>
     );
@@ -94,7 +94,7 @@ function Index() {
   if (!currentUser || !hunter.username) {
     return (
       <>
-        <Particles />
+        {/* <Particles /> */}
         <LoginScreen
           onLogin={(username) => {
 

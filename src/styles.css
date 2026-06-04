@@ -247,7 +247,7 @@
 
 @keyframes pulse-glow {
   0%, 100% { box-shadow: 0 0 12px oklch(0.82 0.2 230 / 0.4), inset 0 0 12px oklch(0.82 0.2 230 / 0.1); }
-  50% { box-shadow: 0 0 28px oklch(0.82 0.2 230 / 0.85), inset 0 0 22px oklch(0.82 0.2 230 / 0.25); }
+  50% { box-shadow: 0 0 12px oklch(0.82 0.2 230 / 0.4), inset 0 0 12px oklch(0.82 0.2 230 / 0.1); }
 }
 @keyframes flicker {
   0%, 100% { opacity: 1; }
@@ -292,11 +292,11 @@ input[type="text"], input[type="password"], input[type="date"], input[type="numb
   letter-spacing: 0.05em;
   width: 100%;
   outline: none;
-  transition: all .2s;
 }
+
 input:focus {
   border-color: var(--neon);
-  box-shadow: 0 0 0 2px oklch(0.82 0.2 230 / 0.25), 0 0 18px oklch(0.6 0.22 240 / 0.45);
+  box-shadow: none;
 }
 
 /* Scrollbar */
