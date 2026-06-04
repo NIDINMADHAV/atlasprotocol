@@ -63,14 +63,28 @@ export function LoginScreen({
             </label>
 
             <input
+              autoFocus
               type="text"
               value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              onChange={(e) => {
+                console.log("typing:", e.target.value);
+                setUsername(e.target.value);
+              }}
               placeholder="Enter Hunter Name"
               className="
                 h-[58px]
                 text-lg
+                w-full
               "
+              style={{
+                pointerEvents: "auto",
+                position: "relative",
+                zIndex: 10,
+                backgroundColor: "oklch(0.1 0.04 260 / 0.6)",
+                color: "white",
+                border: "1px solid rgba(0, 255, 255, 0.3)",
+                padding: "0.75rem 1rem",
+              }}
             />
           </div>
 
@@ -83,11 +97,15 @@ export function LoginScreen({
             <input
               type="password"
               value={password}
-              onChange={(e) => setPassword(e.target.value)}
+              onChange={(e) => {
+                console.log("password:", e.target.value);
+                setPassword(e.target.value);
+              }}
               placeholder="••••••••"
               className="
                 h-[58px]
                 text-lg
+                w-full
               "
             />
           </div>

@@ -33,7 +33,7 @@ export const HudPanel = forwardRef<HTMLDivElement, Props>(function HudPanel(
           </span>
         </div>
       )}
-      <div className="relative scanlines">{children}</div>
+      <div className="relative">{children}</div>
     </motion.div>
   );
 });
